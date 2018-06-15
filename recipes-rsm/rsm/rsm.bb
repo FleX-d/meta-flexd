@@ -13,8 +13,13 @@ S = "${WORKDIR}/git"
 
 EXTRA_OECMAKE += "-DENABLE_TESTS=off"
 
+do_install () {
+  install -d ${D}${bindir}
+  install -m 0755 ${WORKDIR}/build/apps/MCManager/mcManager ${D}${bindir}/mcManager
+}
 
 inherit pkgconfig cmake 
+
 
 
  

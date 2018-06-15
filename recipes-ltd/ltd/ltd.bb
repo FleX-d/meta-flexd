@@ -15,4 +15,9 @@ EXTRA_OECMAKE += "-DENABLE_TESTS=off"
 
 inherit pkgconfig cmake
 
+do_install () {
+       install -d ${D}${bindir}
+       install -m 0755 ${WORKDIR}/build/apps/fleXdLoggerServer/fleXdLoggerServer ${D}${bindir}/fleXdLoggerServer
+}
+
 OECMAKE_FIND_ROOT_PATH_MODE_PROGRAM = "BOTH"
