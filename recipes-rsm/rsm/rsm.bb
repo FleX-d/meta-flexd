@@ -1,4 +1,4 @@
-lDESCRIPTION = "RSM"
+DESCRIPTION = "RSM"
 SECTION = "library"
 
 LICENSE = "BSD-3"
