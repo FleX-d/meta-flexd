@@ -17,7 +17,7 @@ inherit pkgconfig cmake
 
 do_install () {
   install -d ${D}${bindir}
-  install -m 0755 ${WORKDIR}/build/apps/CoreApp/CoreApp ${D}${bindir} 
+  install -m 0755 ${WORKDIR}/build/apps/CoreApp/CoreApp ${D}${bindir}/coreApp
   
   cd ${WORKDIR}/git/apps/CoreApp/tools/
   sh ${WORKDIR}/git/apps/CoreApp/tools/dbInit.sh
