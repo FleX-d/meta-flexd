@@ -9,7 +9,7 @@ DEPENDS = "icl ltd"
 SRCREV = "${AUTOREV}"
 SRC_URI = "git://github.com/FleX-d/Demos.git;branch=dev"
 
-S = "${WORKDIR}/git"
+S = "${WORKDIR}/git/20180619"
 
 do_install () {
   install -d ${D}${bindir}
