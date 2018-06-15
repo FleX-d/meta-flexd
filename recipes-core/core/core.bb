@@ -16,6 +16,7 @@ do_install () {
   install -d ${D}${bindir}
   install -m 0755 ${WORKDIR}/build/apps/CoreApp/CoreApp ${D}${bindir} 
   
+  cd ${WORKDIR}/git/apps/CoreApp/tools/
   sh ${WORKDIR}/git/apps/CoreApp/tools/dbInit.sh
   install ${WORKDIR}/git/apps/CoreApp/tools/CoreAppDb.db ${D}${bindir} 
 }
