@@ -11,7 +11,9 @@ SRC_URI = "git://github.com/FleX-d/Demos.git;branch=dev"
 
 S = "${WORKDIR}/git/20180619"
 
+inherit pkgconfig cmake 
+
 do_install () {
   install -d ${D}${bindir}
-  install -m 0755 ${WORKDIR}/git/DockerApp ${D}${bindir}/dockerApp 
+  install -m 0755 ${WORKDIR}/build/DockerApp/DockerApp ${D}${bindir}/dockerApp 
 } 
