@@ -1,3 +1,0 @@
-mkdir -p /var/cache/lxc/download/FleX-d/minimal_1.0/armhf/default/
-cp * /var/cache/lxc/download/FleX-d/minimal_1.0/armhf/default/
-lxc-create -t download -n test1 -- -d FleX-d -r minimal_1.0 -a armhf

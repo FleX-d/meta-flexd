@@ -11,7 +11,7 @@ IMAGE_INSTALL += "\
     ntp \
     mc nano iptables htop findutils strace binutils \
     kernel-modules load-modules e2fsprogs vlan \
-    lxc crui \
+    lxc criu \
     lxc-flexd-image-minimal \
     xz gnupg tar aufs-util \
     core icl ltd rsm mosquitto dockerapp \
