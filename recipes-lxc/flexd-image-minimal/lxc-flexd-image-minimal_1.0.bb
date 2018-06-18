@@ -7,17 +7,17 @@ LIC_FILES_CHKSUM = "file://LICENSE;md5=662fd4d9d67a7f81cde6fef0f4696a80"
 DEPENDS = "lxc"
 
 SRCREV = "${AUTOREV}"
-SRC_URI = "files:/${PV}/build_id \
-           files:/${PV}/cmd \
-           files:/${PV}/config \
-           files:/${PV}/config.x \
-           files:/${PV}/config-user \
-           files:/${PV}/config-user.x \
-           files:/${PV}/create-message \
-           files:/${PV}/excludes-user \
-           files:/${PV}/expiry \
-           files:/${PV}/rootfs.tar.xz \
-           files:/${PV}/templates \
+SRC_URI = "files://${PV}/build_id \
+           files://${PV}/cmd \
+           files://${PV}/config \
+           files://${PV}/config.x \
+           files://${PV}/config-user \
+           files://${PV}/config-user.x \
+           files://${PV}/create-message \
+           files://${PV}/excludes-user \
+           files://${PV}/expiry \
+           files://${PV}/rootfs.tar.xz \
+           files://${PV}/templates \
 "
 
 S = "${WORKDIR}/${PV}"
