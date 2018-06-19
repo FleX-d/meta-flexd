@@ -20,6 +20,7 @@ do_install () {
   install -m 0755 ${WORKDIR}/build/apps/CoreApp/CoreApp ${D}${bindir}/coreApp
   
   cd ${WORKDIR}/git/apps/CoreApp/tools/
-  sh ${WORKDIR}/git/apps/CoreApp/tools/dbInit.sh
-  install ${WORKDIR}/git/apps/CoreApp/tools/CoreAppDb.db ${D}${bindir} 
+  sh ${WORKDIR}/git/apps/CoreApp/tools/dbInitYocto.sh
+  install -d ${D}${sysconfdir}/CoreApp
+  install -m 0755 ${WORKDIR}/git/apps/CoreApp/tools/CoreAppDb.db ${D}${sysconfdir}/CoreApp
 }
